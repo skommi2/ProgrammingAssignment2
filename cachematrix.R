@@ -1,7 +1,7 @@
-## For second programming assignment, we we building a pair of functions
+## For second programming assignment, we are building a pair of functions
 ## that compute inverse of a matrix and cache the results for subsequent use.
 
-## function that holds matrix and inverse of matrix for later use.
+## Function that holds matrix and inverse of matrix for later use.
 
 makeCacheMatrix <- function(x = matrix()) {
     invmtrx <- NULL
@@ -17,8 +17,9 @@ makeCacheMatrix <- function(x = matrix()) {
          getinverse = getinverse)
 }
 
-## Computes the inverse of matrix.
-## It saves the result first time and returns the cached value after that.
+## Function that computes the inverse of matrix.
+## It computes and saves the result on the first use and
+## returns the cached value after that.
 ## Please note that the input is a special matrix made with makeCacheMatrix()
 
 cacheSolve <- function(x, ...) {
